@@ -7,4 +7,5 @@ MarkupSafe==1.1.1
 Werkzeug==0.15.6
 imutils==0.5.4
 numpy==1.22.2
+pickle5==0.0.12
 opencv-contrib-python==4.5.5.64
