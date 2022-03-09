@@ -22,7 +22,7 @@ def server():
     host_ip = 'local'
 
     #connection output status
-    print("Host IP:", host_ip)
+    #print("Host IP:", host_ip)
 
     #set port and socket
     port = 9999
@@ -33,30 +33,13 @@ def server():
 
     #socket listen
     server_socket.listen(5)
-    print("Listening At: ",socket_address)
+    #print("Listening At: ",socket_address)
 
-    try:
-        while True:
-            client_socket,addr = server_socket.accept()
-            print("Getting Connetion From:", addr)
-            #upon successful connection
-            # if client_socket:
-            #     vid = cv2.VideoCapture(0)
-            #     #while video feed is opened
-            #     while(vid.isOpened()):
-            #         img,frame = vid.read()
-            #         frame = imutils.resize(frame,width=320)
-            #         a = pickle.dumps(frame)           
-            #         message = struct.pack("Q",len(a)) + a
-            #         client_socket.sendall(message)
-            #         cv2.imshow("Transmitting Video",frame)
-            #         key = cv2.waitKey(1) & 0xFF
+    client_socket,addr = server_socket.accept()
+    print("Getting Connetion From:", addr)
+    
+    return "Got Connection Successful"
 
-            #         #closing socket 
-            #         if key == ord('q'):
-            #             client_socket.close()
-    except KeyboardInterrupt:
-        pass
 
 
 
