@@ -2,9 +2,6 @@
 #referenced from https://stackabuse.com/deploying-a-flask-application-to-heroku/
 
 from flask import Flask, render_template, request
-import cv2
-import numpy as np
-import base64
 
 app = Flask(__name__)
 
