@@ -1,14 +1,11 @@
 # app.py
 #referenced from https://stackabuse.com/deploying-a-flask-application-to-heroku/
 
-import socket
+from flask import Flask, render_template, request
 import cv2
-import pickle
-import struct
-import imutils
+import numpy as np
+import base64
 
-from flask import Flask, request, jsonify
-from flask import render_template
 app = Flask(__name__)
 
 # A welcome message to test our server
