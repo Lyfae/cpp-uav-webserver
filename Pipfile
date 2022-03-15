@@ -4,17 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-click = "==7.0"
-gunicorn = "==19.9.0"
-itsdangerous = "==1.1.0"
-imutils = "==0.5.4"
-numpy = "==1.22.2"
-pickle5 = "==0.0.11"
-opencv-contrib-python = "==4.5.5.64"
-Flask = "==1.1.1"
-Jinja2 = "==2.10.1"
-MarkupSafe = "==1.1.1"
-Werkzeug = "==0.15.6"
+flask = "*"
 
 [dev-packages]
 
